@@ -47,3 +47,7 @@ To resolve these issues, users should verify the existence and path of reference
 Conclusion
 
 The Productivity Tracker Extension is a valuable asset for anyone looking to enhance their productivity. By leveraging modern web technologies and design principles, it provides users with the necessary tools to monitor, analyze, and improve their work habits effectively.
+
+#OUTPUT
+
+![Image](https://github.com/user-attachments/assets/02891065-effa-49a7-9d29-9bb738ae7020)
