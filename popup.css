@@ -1,0 +1,185 @@
+body {
+  width: 300px;
+  height: 250px;
+  margin: 0;
+  padding: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #95a5a6;
+}
+
+.status-dot.productive {
+  background-color: #10B981;
+}
+
+.status-dot.unproductive {
+  background-color: #EF4444;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.metric {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.metric .value {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+
+.metric .label {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.metric.productive {
+  border-top: 3px solid #10B981;
+}
+
+.metric.unproductive {
+  border-top: 3px solid #EF4444;
+}
+
+.progress-container {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #e5e7eb;
+  overflow: hidden;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.productive-bar {
+  background-color: #10B981;
+  height: 100%;
+}
+
+.unproductive-bar {
+  background-color: #EF4444;
+  height: 100%;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #666;
+}
+
+.current-site {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.current-site h3 {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+  color: #666;
+}
+
+#current-site-url {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.classification-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.classification-badge.productive {
+  background-color: #ECFDF5;
+  color: #065F46;
+}
+
+.classification-badge.unproductive {
+  background-color: #FEF2F2;
+  color: #991B1B;
+}
+
+.classification-badge.neutral {
+  background-color: #F3F4F6;
+  color: #4B5563;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #f3f4f6;
+}
+
+#open-dashboard {
+  background-color: #4F46E5;
+  color: white;
+  border-color: #4F46E5;
+}
+
+#open-dashboard:hover {
+  background-color: #4338CA;
+}

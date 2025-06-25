@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Productivity Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Productivity Tracker</h1>
+      <div class="status-dot"></div>
+    </div>
+    
+    <div class="summary">
+      <div class="metric total">
+        <span class="value" id="total-time">0m</span>
+        <span class="label">Total</span>
+      </div>
+      <div class="metric productive">
+        <span class="value" id="productive-time">0m</span>
+        <span class="label">Productive</span>
+      </div>
+      <div class="metric unproductive">
+        <span class="value" id="unproductive-time">0m</span>
+        <span class="label">Unproductive</span>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="productive-bar" id="productive-bar"></div>
+        <div class="unproductive-bar" id="unproductive-bar"></div>
+      </div>
+      <div class="progress-labels">
+        <span id="productive-percent">0%</span>
+        <span id="unproductive-percent">0%</span>
+      </div>
+    </div>
+    
+    <div class="current-site">
+      <h3>Current Website</h3>
+      <div id="current-site-url">No active tab</div>
+      <div class="classification-badge" id="classification-badge">
+        <span id="classification-text">neutral</span>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="open-dashboard">Open Dashboard</button>
+      <button id="settings">Settings</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
